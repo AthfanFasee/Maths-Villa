@@ -1,0 +1,31 @@
+.Links{
+    text-decoration: none;
+    color: #000000;
+}
+.navbar{
+    z-index: 1;
+    
+}
+
+.NavDropdown{
+    
+    margin: 0 22px 0 0;
+}
+
+.NavDropdown :hover{
+    color: #041242;
+}
+.NavItems {
+    color: rgb(236, 233, 225);
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.Math {
+    color: rgb(236, 233, 225);
+    font-family: 'Licorice', cursive;
+    margin-left: 5px;
+}
+.LinkContainer{
+    background-color: rgb(84, 151, 202);
+}
+
