@@ -1,35 +1,35 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 
 
 // eslint-disable-next-line no-unused-vars
  function ParallelpipedVolume() {
      
-    const [value, setValue] = useState("")
-    const [length, setLength] = useState(0)
-    const [width, setwidth] = useState(0)
-    const [height, setheight] = useState(0)
+    const [value, setValue] = useState("");
+    const [length, setLength] = useState(0);
+    const [width, setwidth] = useState(0);
+    const [height, setheight] = useState(0);
 
     function calculation() { 
-        const originalvalue = length*height*width
+        const originalvalue = length*height*width;
 
-        const roundedvalue = originalvalue.toFixed(2)
+        const roundedvalue = originalvalue.toFixed(2);
 
-        setValue(`${roundedvalue} cm^3`)
-        console.log(value)
+        setValue(`${roundedvalue} cm^3`);
+       
     }
     
     function getlength (event) {
-        setLength(event.target.value)
+        setLength(event.target.value);
         
     }  
 
     function getheight (event) {
-        setheight(event.target.value)
+        setheight(event.target.value);
         
     }   
 
     function getwidth (event) {
-        setwidth(event.target.value)
+        setwidth(event.target.value);
         
     }   
 
@@ -54,4 +54,4 @@ import React, { useState } from "react"
 
     )
 }
-export default ParallelpipedVolume
+export default ParallelpipedVolume;

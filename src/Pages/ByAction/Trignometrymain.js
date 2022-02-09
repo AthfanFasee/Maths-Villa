@@ -1,6 +1,6 @@
-import Cos from "../../Components/ByAction/Trignometry/Cos/Cos"
-import Sin from "../../Components/ByAction/Trignometry/Sin/Sin"
-import Tan from "../../Components/ByAction/Trignometry/Tan/Tan"
+import Cos from "../../Components/ByAction/Trignometry/Cos/Cos";
+import Sin from "../../Components/ByAction/Trignometry/Sin/Sin";
+import Tan from "../../Components/ByAction/Trignometry/Tan/Tan";
 
 function Trignometrymain() {
     return (
@@ -12,4 +12,4 @@ function Trignometrymain() {
     )
 }
 
-export default Trignometrymain
+export default Trignometrymain;

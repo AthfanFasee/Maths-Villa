@@ -1,31 +1,31 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 
 
 // eslint-disable-next-line no-unused-vars
  function CurvedeSurface() {
      
-    const [value, setValue] = useState("")
-    const [radius, setradius] = useState(0)
-    const [height, setheight] = useState(0)
+    const [value, setValue] = useState("");
+    const [radius, setradius] = useState(0);
+    const [height, setheight] = useState(0);
 
     function calculation() { 
-        const PI = 3.14
+        const PI = 3.14;
         
-        const originalvalue = 2*PI*radius*height
+        const originalvalue = 2*PI*radius*height;
 
-        const roundedvalue = originalvalue.toFixed(2)
+        const roundedvalue = originalvalue.toFixed(2);
 
-        setValue(`${roundedvalue} cm^2`)
-        console.log(value)
+        setValue(`${roundedvalue} cm^2`);
+       
     }
     
     function getradius (event) {
-        setradius(event.target.value)
+        setradius(event.target.value);
         
     }  
 
     function getheight (event) {
-        setheight(event.target.value)
+        setheight(event.target.value);
         
     }   
 
@@ -48,4 +48,4 @@ import React, { useState } from "react"
     )
 }
 
-export default CurvedeSurface
+export default CurvedeSurface;

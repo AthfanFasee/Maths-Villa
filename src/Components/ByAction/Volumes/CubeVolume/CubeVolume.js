@@ -1,25 +1,25 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 
 
 // eslint-disable-next-line no-unused-vars
  function CubeVolume() {
      
-    const [value, setValue] = useState("")
-    const [side, setside] = useState(0)
+    const [value, setValue] = useState("");
+    const [side, setside] = useState(0);
 
 
     function calculation() { 
-        const originalvalue = side * 3
+        const originalvalue = side * 3;
 
-        const roundedvalue = originalvalue.toFixed(2)
+        const roundedvalue = originalvalue.toFixed(2);
 
-        setValue(`${roundedvalue} cm^3`)
-        console.log(value)
+        setValue(`${roundedvalue} cm^3`);
+        
     }
     
 
     function getside (event) {
-        setside(event.target.value)
+        setside(event.target.value);
         
     }  
 
@@ -40,4 +40,4 @@ import React, { useState } from "react"
 
     )
 }
-export default CubeVolume
+export default CubeVolume;

@@ -1,28 +1,28 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 
 
 // eslint-disable-next-line no-unused-vars
  function CylinderVolume() {
-    const PI = 3.14
+    const PI = 3.14;
      
-    const [value, setValue] = useState("")
-    const [radius, setradius] = useState(0)
-    const [height, setheight] = useState(0)
+    const [value, setValue] = useState("");
+    const [radius, setradius] = useState(0);
+    const [height, setheight] = useState(0);
 
     function calculation() { 
-        const originalvalue = PI * radius * radius * height
+        const originalvalue = PI * radius * radius * height;
 
-        const roundedvalue = originalvalue.toFixed(2)
+        const roundedvalue = originalvalue.toFixed(2);
 
-        setValue(`${roundedvalue} cm^3`)
+        setValue(`${roundedvalue} cm^3`);
     }
     
     function getRadius (event) {
-        setradius(event.target.value)
+        setradius(event.target.value);
         
     }   
     function getHeight (event) {
-        setheight(event.target.value)
+        setheight(event.target.value);
         
     }   
 
@@ -44,4 +44,4 @@ import React, { useState } from "react"
 
     )
 }
-export default CylinderVolume
+export default CylinderVolume;

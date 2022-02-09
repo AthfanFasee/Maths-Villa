@@ -1,32 +1,32 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 
 
 // eslint-disable-next-line no-unused-vars
  function Multiplication() {
      
     
-    const [value, setValue] = useState("")
-    const [Number1, setNumber1] = useState(0)
-    const [Number2, setNumber2] = useState(0)
+    const [value, setValue] = useState("");
+    const [Number1, setNumber1] = useState(0);
+    const [Number2, setNumber2] = useState(0);
 
     function calculation() { 
-        const num1 = Number(Number1)
-        const num2 = Number(Number2)
+        const num1 = Number(Number1);
+        const num2 = Number(Number2);
 
-        const originalvalue = num1*num2
+        const originalvalue = num1*num2;
 
-        const roundedvalue = originalvalue.toFixed(2)
+        const roundedvalue = originalvalue.toFixed(2);
 
-        setValue(roundedvalue)
+        setValue(roundedvalue);
     }
     
     function getNumber1 (event) {
-        setNumber1(event.target.value)
+        setNumber1(event.target.value);
         
     }  
 
     function getNumber2 (event) {
-        setNumber2(event.target.value)
+        setNumber2(event.target.value);
         
     }   
 
@@ -48,4 +48,4 @@ import React, { useState } from "react"
     )
 }
 
-export default Multiplication
+export default Multiplication;

@@ -1,16 +1,16 @@
-import React from "react"
-import "./style.css"
-import Trianglemain from "./Pages/ByObject/Trianglemain"
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import ErrorPage from "./Pages/ErrorPage/ErrorPage"
-import BasicCalculationmain from "./Pages/ByAction/BasicCalculationmain"
-import Trignometrymain from "./Pages/ByAction/Trignometrymain"
-import Areamain from "./Pages/ByAction/Areamain"
-import Navbar from "./Components/Navbar/Navbar"
-import Circlemain from "./Pages/ByObject/Circlemain"
-import Cylindermain from "./Pages/ByObject/Cylindermain"
-import Spheremain from "./Pages/ByObject/Spheremain"
-import Volumesmain from "./Pages/ByAction/Volumesmain"
+import React from "react";
+import "./style.css";
+import Trianglemain from "./Pages/ByObject/Trianglemain";
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import ErrorPage from "./Pages/ErrorPage/ErrorPage";
+import BasicCalculationmain from "./Pages/ByAction/BasicCalculationmain";
+import Trignometrymain from "./Pages/ByAction/Trignometrymain";
+import Areamain from "./Pages/ByAction/Areamain";
+import Navbar from "./Components/Navbar/Navbar";
+import Circlemain from "./Pages/ByObject/Circlemain";
+import Cylindermain from "./Pages/ByObject/Cylindermain";
+import Spheremain from "./Pages/ByObject/Spheremain";
+import Volumesmain from "./Pages/ByAction/Volumesmain";
 
 
 

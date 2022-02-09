@@ -1,22 +1,22 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 
 
 // eslint-disable-next-line no-unused-vars
  function Surface() {
-    const PI = 3.14
+    const PI = 3.14;
      
-    const [value, setValue] = useState("")
-    const [inputvalue, setInputvalue] = useState(0)
+    const [value, setValue] = useState("");
+    const [inputvalue, setInputvalue] = useState(0);
 
     function calculation() { 
-        const originalvalue = PI * inputvalue * inputvalue * 4
-        const roundedvalue = originalvalue.toFixed(2)
+        const originalvalue = PI * inputvalue * inputvalue * 4;
+        const roundedvalue = originalvalue.toFixed(2);
 
-        setValue(`${roundedvalue} cm^2`)
+        setValue(`${roundedvalue} cm^2`);
     }
     
     function getInput (event) {
-        setInputvalue(event.target.value)
+        setInputvalue(event.target.value);
         
     }   
 
@@ -36,4 +36,4 @@ import React, { useState } from "react"
     )
 }
 
-export default Surface
+export default Surface;

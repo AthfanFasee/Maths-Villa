@@ -1,36 +1,35 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 
 
 // eslint-disable-next-line no-unused-vars
  function TrapezoidArea() {
      
-    const [value, setValue] = useState("")
-    const [largeSide, setlargeSide] = useState(0)
-    const [smallSide, setsmallSide] = useState(0)
-    const [height, setHeight] = useState(0)
+    const [value, setValue] = useState("");
+    const [largeSide, setlargeSide] = useState(0);
+    const [smallSide, setsmallSide] = useState(0);
+    const [height, setHeight] = useState(0);
 
     function calculation() { 
-        const originalvalue = (largeSide+smallSide)*0.5
-        const answer = originalvalue*height
+        const originalvalue = (largeSide+smallSide)*0.5;
+        const answer = originalvalue*height;
 
-        const roundedvalue = answer.toFixed(2)
+        const roundedvalue = answer.toFixed(2);
 
-        setValue(`${roundedvalue} cm^2`)
-        console.log(value)
+        setValue(`${roundedvalue} cm^2`);
     }
     
     function getlargeSide (event) {
-        setlargeSide(event.target.value)
+        setlargeSide(event.target.value);
         
     }  
 
     function getsmallSide (event) {
-        setsmallSide(event.target.value)
+        setsmallSide(event.target.value);
         
     }  
 
     function getheight (event) {
-        setHeight(event.target.value)
+        setHeight(event.target.value);
         
     }   
 
@@ -55,4 +54,4 @@ import React, { useState } from "react"
 
     )
 }
-export default TrapezoidArea
+export default TrapezoidArea;

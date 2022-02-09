@@ -1,30 +1,30 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 
 
 // eslint-disable-next-line no-unused-vars
  function TriangularPyramid() {
      
-    const [value, setValue] = useState("")
-    const [baseArea, setbaseArea] = useState(0)
-    const [height, setheight] = useState(0)
+    const [value, setValue] = useState("");
+    const [baseArea, setbaseArea] = useState(0);
+    const [height, setheight] = useState(0);
 
     function calculation() { 
-        const originalvalue =(baseArea*height)
-        const answer =originalvalue/3
+        const originalvalue =(baseArea*height);
+        const answer =originalvalue/3;
 
-        const roundedvalue = answer.toFixed(2)
+        const roundedvalue = answer.toFixed(2);
 
-        setValue(`${roundedvalue} cm^2`)
-        console.log(value)
+        setValue(`${roundedvalue} cm^2`);
+      
     }
     
     function getbaseArea (event) {
-        setbaseArea(event.target.value)
+        setbaseArea(event.target.value);
         
     }  
 
     function getheight (event) {
-        setheight(event.target.value)
+        setheight(event.target.value);
         
     }   
 
@@ -47,4 +47,4 @@ import React, { useState } from "react"
     )
 }
 
-export default TriangularPyramid
+export default TriangularPyramid;

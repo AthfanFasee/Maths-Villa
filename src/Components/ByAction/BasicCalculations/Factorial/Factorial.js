@@ -1,30 +1,30 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 
 
 // eslint-disable-next-line no-unused-vars
  function Factorial() {
-     
-    const [value, setValue] = useState("")
-    const [Number1, setNumber1] = useState(0)
+
+    const [value, setValue] = useState("");
+    const [Number1, setNumber1] = useState(0);
 
 
     function calculation(no) { 
         if (no >= 1) {         
-            const Answer = no * calculation(no - 1)
-            const roundedvalue = Answer.toFixed(2)
-            setValue(roundedvalue)
-            return roundedvalue
+            const Answer = no * calculation(no - 1);
+            const roundedvalue = Answer.toFixed(2);
+            setValue(roundedvalue);
+            return roundedvalue;
             
         } else {
-            setValue(1)
-            return 1  
+            setValue(1);
+            return 1;
         }
 
                  
     }
     
     function getNumber1 (event) {
-        setNumber1(event.target.value)
+        setNumber1(event.target.value);
         
     }  
 
@@ -45,4 +45,4 @@ import React, { useState } from "react"
 
     )
 }
-export default Factorial
+export default Factorial;

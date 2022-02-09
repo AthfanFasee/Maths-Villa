@@ -1,31 +1,31 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 
 
 // eslint-disable-next-line no-unused-vars
  function TotalSurface() {
      
-    const [value, setValue] = useState("")
-    const [radius, setradius] = useState(0)
-    const [height, setheight] = useState(0)
+    const [value, setValue] = useState("");
+    const [radius, setradius] = useState(0);
+    const [height, setheight] = useState(0);
 
     function calculation() { 
-        const PI = 3.14
-        const x = radius+height
-        const originalvalue = 2*PI*radius*x
+        const PI = 3.14;
+        const x = radius+height;
+        const originalvalue = 2*PI*radius*x;
 
-        const roundedvalue = originalvalue.toFixed(2)
+        const roundedvalue = originalvalue.toFixed(2);
 
-        setValue(`${roundedvalue} cm^2`)
-        console.log(value)
+        setValue(`${roundedvalue} cm^2`);
+        console.log(value);
     }
     
     function getradius (event) {
-        setradius(event.target.value)
+        setradius(event.target.value);
         
     }  
 
     function getheight (event) {
-        setheight(event.target.value)
+        setheight(event.target.value);
         
     }   
 
@@ -48,4 +48,4 @@ import React, { useState } from "react"
     )
 }
 
-export default TotalSurface
+export default TotalSurface;

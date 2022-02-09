@@ -1,29 +1,29 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 
 
 // eslint-disable-next-line no-unused-vars
  function RegularPolygonArea() {
      
-    const [value, setValue] = useState("")
-    const [permeter, setpermeter] = useState(0)
-    const [apothem, setapothem] = useState(0)
+    const [value, setValue] = useState("");
+    const [permeter, setpermeter] = useState(0);
+    const [apothem, setapothem] = useState(0);
 
     function calculation() { 
-        const originalvalue = (permeter*0.5)*apothem
+        const originalvalue = (permeter*0.5)*apothem;
 
-        const roundedvalue = originalvalue.toFixed(2)
+        const roundedvalue = originalvalue.toFixed(2);
 
-        setValue(`${roundedvalue} cm^2`)
-        console.log(value)
+        setValue(`${roundedvalue} cm^2`);
+        console.log(value);
     }
     
     function getpermeter (event) {
-        setpermeter(event.target.value)
+        setpermeter(event.target.value);
         
     }  
 
     function getapothem (event) {
-        setapothem(event.target.value)
+        setapothem(event.target.value);
         
     }   
 
@@ -45,4 +45,4 @@ import React, { useState } from "react"
 
     )
 }
-export default RegularPolygonArea
+export default RegularPolygonArea;

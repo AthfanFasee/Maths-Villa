@@ -1,29 +1,29 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 
 
 // eslint-disable-next-line no-unused-vars
  function TriangleArea() {
      
-    const [value, setValue] = useState("")
-    const [base, setbase] = useState(0)
-    const [height, setheight] = useState(0)
+    const [value, setValue] = useState("");
+    const [base, setbase] = useState(0);
+    const [height, setheight] = useState(0);
 
     function calculation() { 
-        const originalvalue = base*height*0.5
+        const originalvalue = base*height*0.5;
 
-        const roundedvalue = originalvalue.toFixed(2)
+        const roundedvalue = originalvalue.toFixed(2);
 
-        setValue(`${roundedvalue} cm^2`)
-        console.log(value)
+        setValue(`${roundedvalue} cm^2`);
+        
     }
     
     function getbase (event) {
-        setbase(event.target.value)
+        setbase(event.target.value);
         
     }  
 
     function getheight (event) {
-        setheight(event.target.value)
+        setheight(event.target.value);
         
     }   
 
@@ -45,4 +45,4 @@ import React, { useState } from "react"
 
     )
 }
-export default TriangleArea
+export default TriangleArea;

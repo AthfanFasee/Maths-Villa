@@ -1,29 +1,29 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 
 
 // eslint-disable-next-line no-unused-vars
  function ArcLength() {
      
-    const [value, setValue] = useState("")
-    const [length, setlength] = useState(0)
-    const [angel, setangel] = useState(0)
+    const [value, setValue] = useState("");
+    const [length, setlength] = useState(0);
+    const [angel, setangel] = useState(0);
 
     function calculation() { 
-        const originalvalue = length*angel
+        const originalvalue = length*angel;
 
-        const roundedvalue = originalvalue.toFixed(2)
+        const roundedvalue = originalvalue.toFixed(2);
 
-        setValue(`${roundedvalue} cm^2`)
-        console.log(value)
+        setValue(`${roundedvalue} cm^2`);
+       
     }
     
     function getlength (event) {
-        setlength(event.target.value)
+        setlength(event.target.value);
         
     }  
 
     function getangel (event) {
-        setangel(event.target.value)
+        setangel(event.target.value);
         
     }   
 
@@ -46,4 +46,4 @@ import React, { useState } from "react"
     )
 }
 
-export default ArcLength
+export default ArcLength;

@@ -1,23 +1,23 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 
 
 // eslint-disable-next-line no-unused-vars
  function Sin() {
      
-    const [value, setValue] = useState("")
-    const [Number1, setNumber1] = useState(0)
+    const [value, setValue] = useState("");
+    const [Number1, setNumber1] = useState(0);
 
 
     function calculation() { 
-        const originalvalue = Math.sin(Number1)
-        const roundedvalue = originalvalue.toFixed(2)
+        const originalvalue = Math.sin(Number1);
+        const roundedvalue = originalvalue.toFixed(2);
 
-        setValue(roundedvalue)
-        console.log(value)
+        setValue(roundedvalue);
+        
     }
     
     function getNumber1 (event) {
-        setNumber1(event.target.value)
+        setNumber1(event.target.value);
         
     }  
 
@@ -38,4 +38,4 @@ import React, { useState } from "react"
 
     )
 }
-export default Sin
+export default Sin;

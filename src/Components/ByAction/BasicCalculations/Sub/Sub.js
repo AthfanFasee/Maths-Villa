@@ -1,29 +1,29 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 
 
 // eslint-disable-next-line no-unused-vars
  function Sub() {
-     
-    const [value, setValue] = useState("")
-    const [Number1, setNumber1] = useState(0)
-    const [Number2, setNumber2] = useState(0)
+
+    const [value, setValue] = useState("");
+    const [Number1, setNumber1] = useState(0);
+    const [Number2, setNumber2] = useState(0);
 
     function calculation() { 
-        const originalvalue = Number1-Number2
+        const originalvalue = Number1-Number2;
 
-        const roundedvalue = originalvalue.toFixed(2)
+        const roundedvalue = originalvalue.toFixed(2);
 
-        setValue(roundedvalue)
-        console.log(value)
+        setValue(roundedvalue);
+
     }
     
     function getNumber1 (event) {
-        setNumber1(event.target.value)
+        setNumber1(event.target.value);
         
     }  
 
     function getNumber2 (event) {
-        setNumber2(event.target.value)
+        setNumber2(event.target.value);
         
     }   
 
@@ -45,4 +45,4 @@ import React, { useState } from "react"
 
     )
 }
-export default Sub
+export default Sub;

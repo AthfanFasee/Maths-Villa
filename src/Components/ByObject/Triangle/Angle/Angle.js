@@ -1,30 +1,30 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 
 
 // eslint-disable-next-line no-unused-vars
  function Angle() {
      
-    const [value, setValue] = useState("")
-    const [Angle1, setAngle1] = useState(0)
-    const [Angle2, setAngle2] = useState(0)
+    const [value, setValue] = useState("");
+    const [Angle1, setAngle1] = useState(0);
+    const [Angle2, setAngle2] = useState(0);
 
     function calculation() { 
-        const angle = Number(Angle1)+Number(Angle2)
+        const angle = Number(Angle1)+Number(Angle2);
     
-        const originalvalue = 180 - angle
-        const roundedvalue = originalvalue.toFixed(2)
+        const originalvalue = 180 - angle;
+        const roundedvalue = originalvalue.toFixed(2);
 
-        setValue(`${roundedvalue}°`)
-        console.log(value)
+        setValue(`${roundedvalue}°`);
+        
     }
     
     function getAngle1 (event) {
-        setAngle1(event.target.value)
+        setAngle1(event.target.value);
         
     }  
 
     function getAngle2 (event) {
-        setAngle2(event.target.value)
+        setAngle2(event.target.value);
         
     }   
 
@@ -47,4 +47,4 @@ import React, { useState } from "react"
     )
 }
 
-export default Angle
+export default Angle;

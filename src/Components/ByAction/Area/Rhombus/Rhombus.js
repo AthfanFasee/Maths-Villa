@@ -1,29 +1,29 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 
 
 // eslint-disable-next-line no-unused-vars
  function RhombusArea() {
      
-    const [value, setValue] = useState("")
-    const [largeDiagonal, setlargeDiagonal] = useState(0)
-    const [smallDiagonal, setsmallDiagonal] = useState(0)
+    const [value, setValue] = useState("");
+    const [largeDiagonal, setlargeDiagonal] = useState(0);
+    const [smallDiagonal, setsmallDiagonal] = useState(0);
 
     function calculation() { 
-        const originalvalue = largeDiagonal*smallDiagonal*0.5
+        const originalvalue = largeDiagonal*smallDiagonal*0.5;
 
-        const roundedvalue = originalvalue.toFixed(2)
+        const roundedvalue = originalvalue.toFixed(2);
 
-        setValue(`${roundedvalue} cm^2`)
-        console.log(value)
+        setValue(`${roundedvalue} cm^2`);
+        
     }
     
     function getlargeDiagonal (event) {
-        setlargeDiagonal(event.target.value)
+        setlargeDiagonal(event.target.value);
         
     }  
 
     function getsmallDiagonal (event) {
-        setsmallDiagonal(event.target.value)
+        setsmallDiagonal(event.target.value);
         
     }   
 
@@ -45,4 +45,4 @@ import React, { useState } from "react"
 
     )
 }
-export default RhombusArea
+export default RhombusArea;
