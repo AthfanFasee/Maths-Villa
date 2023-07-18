@@ -1,4 +1,19 @@
-A Site to do multiple math calculations very easily in a user-friendly manner and can get multiple math equations as needed. You can access the calculation you want to do using the Navbar I created using bootstrap. I made this site originally to help my cousins with their public exams and to save their time as they don't have to figure out answers on their own. This site is made without any external Math libraries and is fully responsive.
-I will be keep adding stuffs to this Project and might tests as well in near future
+# Math-Villa
+Created a website to assist my sibling with math tests. Implemented a navigation bar with Bootstrap, enabling convenient access to various operations and equations. I did not use any external Math libraries for this project.
 
-Tools Used  :  JavaScript,  React,  Bootstrap(5)
+## Technologies Used
+React, Bootstrap, CSS
+
+## Available Scripts
+In the project directory, you can run:
+
+### `npm install`
+Installs needed dependencies.
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3001](http://localhost:3001) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
